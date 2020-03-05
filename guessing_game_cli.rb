@@ -5,5 +5,6 @@ def run_guessing_game
   if guess != num
     p "Sorry! The computer guessed 6."
   else
+    p "You guessed the correct number!"
   end
 end
