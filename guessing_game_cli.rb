@@ -6,11 +6,8 @@ def run_guessing_game
     p "Goodbye!"
   else
     int_num = your_num.to_i
-    binding.pry
     if int_num != num
       p "Sorry! The computer guessed #{num}."
-    elsif your_num != num
-
     end
   end
 end
