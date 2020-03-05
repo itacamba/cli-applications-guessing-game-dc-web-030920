@@ -1,14 +1,16 @@
-require 'pry'
 def run_guessing_game
-  num = rand(1...6)
-  guess = gets.chomp
-  if guess == 'exit'
-    p "Goodbye!"
-  elsif guess == '2'
-      p "Sorry! The computer guessed 6."
-  elsif  guess == '2'
-    p "You guessed the correct number!"
+  number = rand(6)+1
+  puts "Guess a number between 1 and 6"
+  input = gets.chomp
+
+  if input == "exit"
+    puts "Goodbye!"
+  elsif input != number.to_s
+    puts "Sorry! The computer guessed #{number}."
+  elsif input == number.to_s
+    puts "You guessed the correct number!"
   end
+
 
 
 end
