@@ -6,7 +6,7 @@ def run_guessing_game
     p "Goodbye!"
   elsif guess == '2'
       p "Sorry! The computer guessed 6."
-  else
+  elsif num == 1
     p "Correct"
   end
 
