@@ -1,14 +1,9 @@
 require 'pry'
 def run_guessing_game
   num = rand(1...6)
-  your_num = gets.chomp
-  if your_num == 'exit'
-    p "Goodbye!"
+  guess = gets.to_i
+  if guess != num
+    p "Sorry! The computer guessed #{num}"
   else
-     if num != your_num
-       p "Sorry! The computer guessed #{num}"
-     elsif num == your_num
-       p "Correct"
-     end
   end
 end
