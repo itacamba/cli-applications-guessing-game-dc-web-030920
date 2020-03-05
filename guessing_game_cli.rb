@@ -5,6 +5,10 @@ def run_guessing_game
     p "Goodbye!"
   else
     your_num.to_i
+    if your_num == num
+      puts "You guessed the correct number!"
+    elsif your_num != num
+      puts "Sorry! The computer guessed #{num}."
+    end
   end
-  your_num
 end
