@@ -5,7 +5,6 @@ def run_guessing_game
   if your_num == 'exit'
     p "Goodbye!"
   else
-    your_num.to_i
-    binding.pry
+     p your_num.to_i
   end
 end
