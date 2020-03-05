@@ -5,7 +5,7 @@ def run_guessing_game
   if your_num == 'exit'
     result = "Goodbye!"
   else
-    your_num.to_i
+    result = your_num.to_i
   end
   result
 end
