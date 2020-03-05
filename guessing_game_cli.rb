@@ -7,6 +7,7 @@ def run_guessing_game
     int_num = your_num.to_i
     if int_num != num
       p "Sorry! The computer guessed #{num}."
+      binding.pry
     elsif your_num != num
 
     end
