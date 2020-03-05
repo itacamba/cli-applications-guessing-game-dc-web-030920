@@ -4,11 +4,11 @@ def run_guessing_game
   if your_num == 'exit'
     p "Goodbye!"
   else
-    your_num.to_i
-    if your_num == num
-      p "You guessed the correct number!"
-    elsif your_num != num
+    int_num = your_num.to_i
+    if int_num != num
       p "Sorry! The computer guessed #{num}."
+    elsif your_num != num
+
     end
   end
 end
